@@ -5,3 +5,6 @@ Kumpulan berbagai komponen input berbasis React yang reusable, fleksibel, dan mu
 ```bash
 npm install autosize
 ```
+```bash
+npm install @uiw/react-codemirror @codemirror/lang-html @codemirror/lang-javascript @codemirror/lang-css @codemirror/lang-json @codemirror/lang-xml @uiw/codemirror-theme-github
+```
