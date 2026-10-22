@@ -1,0 +1,93 @@
+input[type="color"] {
+  position: relative;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  width: calc(var(--bs-body-font-size) * 1.5);
+  height: calc(var(--bs-body-font-size) * 1.5);
+  border-radius: var(--bs-border-radius-2xl);
+  position: absolute;
+  right: calc(var(--bs-body-font-size) * 0.75);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 50%;
+  right: calc(var(--bs-body-font-size) * 1);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.card-range {
+  z-index: 2;
+}
+
+.card-range .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  position: relative;
+  background-image: linear-gradient(to right, #ef2d2d, #efbb2d, #5def2d);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.card-range .dot.active::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px dotted #ef2d2d;
+}
+
+.card-range .dot::after {
+  content: attr(data-content);
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.15rem 0.25rem;
+}
+
+.card-range .dot:first-child::after {
+  margin-left: 1rem;
+}
+
+.card-range .dot:last-child::after {
+  margin-left: -1rem;
+}
+
+.card-range .line {
+  height: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bs-body-bg);
+}
+
+.card-range .line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--percentage-step);
+  height: 100%;
+  border-radius: var(--bs-border-radius-pill);
+  background-image: linear-gradient(to right, #ef2d2d, #efbb2d, #5def2d);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.form-card {
+  height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+}
