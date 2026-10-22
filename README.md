@@ -42,7 +42,7 @@ Contoh penggunaan dasar komponen:
 
 ## Supported Input Types
 
-## Text
+### Text
 
 Digunakan untuk input teks biasa.
 
@@ -58,7 +58,7 @@ Digunakan untuk input teks biasa.
 
 ---
 
-## Tel
+### Tel
 
 Input nomor telepon dengan dukungan kode negara.
 
@@ -81,11 +81,11 @@ Input nomor telepon dengan dukungan kode negara.
 
 ---
 
-## Checkbox
+### Checkbox
 
 Digunakan untuk memilih lebih dari satu opsi.
 
-### Format Options
+#### Format Options
 
 ```jsx
 const hobbyOptions = [
@@ -116,7 +116,7 @@ const hobbyOptions = [
 
 ---
 
-## Color
+### Color
 
 Digunakan untuk memilih warna.
 
@@ -131,7 +131,7 @@ Digunakan untuk memilih warna.
 
 ---
 
-## Date
+### Date
 
 Digunakan untuk memilih tanggal.
 
@@ -146,7 +146,7 @@ Digunakan untuk memilih tanggal.
 
 ---
 
-## Password
+### Password
 
 Input password dengan dukungan toggle visibility.
 
@@ -160,11 +160,11 @@ Input password dengan dukungan toggle visibility.
 
 ---
 
-## Radio
+### Radio
 
 Digunakan untuk memilih satu opsi.
 
-### Format Options
+#### Format Options
 
 ```jsx
 const hobbyOptions = [
@@ -195,11 +195,11 @@ const hobbyOptions = [
 
 ---
 
-## Range
+### Range
 
 Digunakan untuk memilih nilai dalam rentang tertentu.
 
-### Props Tambahan
+#### Props Tambahan
 
 | Props  | Type     | Deskripsi          |
 | ------ | -------- | ------------------ |
@@ -223,11 +223,11 @@ Digunakan untuk memilih nilai dalam rentang tertentu.
 
 ---
 
-## Select
+### Select
 
 Dropdown select dengan dukungan multi-select dan pencarian.
 
-### Format Options
+#### Format Options
 
 ```jsx
 const options = [
@@ -237,7 +237,7 @@ const options = [
 ];
 ```
 
-### Props Tambahan
+#### Props Tambahan
 
 | Props           | Type      | Deskripsi                 |
 | --------------- | --------- | ------------------------- |
@@ -262,11 +262,11 @@ const options = [
 
 ---
 
-## Step
+### Step
 
 Input multi-step dinamis untuk pemilihan bertingkat.
 
-### Struktur Step
+#### Struktur Step
 
 ```jsx
 const steps = [
@@ -299,7 +299,7 @@ const steps = [
 ];
 ```
 
-### Props Tambahan
+#### Props Tambahan
 
 | Props           | Type       | Deskripsi                |
 | --------------- | ---------- | ------------------------ |
@@ -328,11 +328,11 @@ const steps = [
 
 ---
 
-## List
+### List
 
 Digunakan untuk membuat daftar item dinamis.
 
-### Props Tambahan
+#### Props Tambahan
 
 | Props          | Type    | Deskripsi        |
 | -------------- | ------- | ---------------- |
@@ -352,11 +352,11 @@ Digunakan untuk membuat daftar item dinamis.
 
 ---
 
-## Image
+### Image
 
 Upload gambar dengan dukungan multiple upload dan preview.
 
-### Props Tambahan
+#### Props Tambahan
 
 | Props            | Type       | Deskripsi               |
 | ---------------- | ---------- | ----------------------- |
@@ -384,11 +384,11 @@ Upload gambar dengan dukungan multiple upload dan preview.
 
 ---
 
-## Code
+### Code
 
 Editor kode berbasis syntax highlighting.
 
-### Props Tambahan
+#### Props Tambahan
 
 | Props      | Type     | Deskripsi                 |
 | ---------- | -------- | ------------------------- |
@@ -406,7 +406,7 @@ Editor kode berbasis syntax highlighting.
 
 ---
 
-# Best Practices
+## Best Practices
 
 * Gunakan `value` dan `onChange` untuk controlled component.
 * Gunakan `defaultValue` hanya untuk uncontrolled component.
@@ -416,7 +416,7 @@ Editor kode berbasis syntax highlighting.
 
 ---
 
-# Supported Languages for `type="code"`
+## Supported Languages for `type="code"`
 
 | Language   | Value          |
 | ---------- | -------------- |
@@ -428,7 +428,7 @@ Editor kode berbasis syntax highlighting.
 
 ---
 
-# Example Form Integration
+## Example Form Integration
 
 ```jsx
 export default function ExampleForm() {
