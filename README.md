@@ -88,28 +88,24 @@ Digunakan untuk memilih lebih dari satu opsi.
 #### Format Options
 
 ```jsx
-const hobbyOptions = [
-    {
-        label: "Membaca",
-        value: "membaca"
-    },
-    {
-        label: "Gaming",
-        value: "gaming"
-    },
-    {
-        label: "Programming",
-        value: "programming"
-    }
-];
-```
-
-```jsx
 <Input
     type="checkbox"
     label="Pilih Hobi"
-    value={hobbies}
-    options={hobbyOptions}
+    value={['membaca'}
+    options={[
+        {
+            label: "Membaca",
+            value: "membaca"
+        },
+        {
+            label: "Gaming",
+            value: "gaming"
+        },
+        {
+            label: "Programming",
+            value: "programming"
+        }
+    ]}
     onChange={(e) => setHobbies(e.target.value)}
 />
 ```
@@ -124,7 +120,7 @@ Digunakan untuk memilih warna.
 <Input
     type="color"
     label="Warna Primary"
-    value={color}
+    value={'#000000'}
     onChange={(e) => setColor(e.target.value)}
 />
 ```
@@ -139,7 +135,7 @@ Digunakan untuk memilih tanggal.
 <Input
     type="date"
     label="Tanggal Lahir"
-    value={birthDate}
+    value={'2007-05-22'}
     onChange={(e) => setBirthDate(e.target.value)}
 />
 ```
@@ -167,28 +163,24 @@ Digunakan untuk memilih satu opsi.
 #### Format Options
 
 ```jsx
-const hobbyOptions = [
-    {
-        label: "Membaca",
-        value: "membaca"
-    },
-    {
-        label: "Gaming",
-        value: "gaming"
-    },
-    {
-        label: "Programming",
-        value: "programming"
-    }
-];
-```
-
-```jsx
 <Input
     type="radio"
     label="Pilih Hobi"
-    value={hobby}
-    options={hobbyOptions}
+    value={'membaca'}
+    options={[
+        {
+            label: "Membaca",
+            value: "membaca"
+        },
+        {
+            label: "Gaming",
+            value: "gaming"
+        },
+        {
+            label: "Programming",
+            value: "programming"
+        }
+    ]}
     onChange={(e) => setHobby(e.target.value)}
 />
 ```
